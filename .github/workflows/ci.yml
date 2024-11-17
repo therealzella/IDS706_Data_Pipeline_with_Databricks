@@ -36,3 +36,7 @@ jobs:
       run: |
         pip install pytest pytest-cov
         pytest --cov=your_package_name
+
+    - name: Install distutils
+      run: sudo apt-get update && sudo apt-get install -y python3-distutils
+

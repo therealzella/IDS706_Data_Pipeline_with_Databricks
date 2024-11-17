@@ -1,20 +1,20 @@
-# Core tools for building and installing packages
-setuptools
-wheel
-
 # DevOps tools
-black==22.3.0        # formatting (used in the format and check-format targets)
-click==8.1.3         # dependency of black, useful for command-line interfaces
-pylint==2.15.3       # for linting Python code (used in the lint target)
+black==22.3.0         # formatting (used in the format and check-format targets)
+click==8.1.3          # dependency of black, useful for command-line interfaces
+pytest==7.4.0         # for running tests (used in the test and coverage targets)
+pytest-cov==4.0.0     # for measuring test coverage (used in the coverage target)
+pylint==2.15.3        # for linting Python code (used in the lint target)
 
-# Testing and Linting tools
-pytest==7.4.0        # for running tests (used in the test and coverage targets)
-pytest-cov==4.0.0    # for measuring test coverage (used in the coverage target)
-flake8==6.0.0        # linting tool
-
-# Web development
-fastapi==0.85.0      # web framework (if relevant to project)
-
-# Data manipulation
+# Web
+fastapi==0.85.0       # web framework (if relevant to the project)
+flake8==6.0.0
 pandas==1.4.3
 numpy==1.22.0
+
+# Testing and linting tools
+flake8==6.0.0
+pytest>=7.0.0
+pytest-cov==4.0.0
+
+# Additional Dependencies to Resolve Issues
+setuptools>=58.0.0    # to resolve distutils error during setup

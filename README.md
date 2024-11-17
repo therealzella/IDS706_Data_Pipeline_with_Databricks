@@ -1,7 +1,7 @@
 # Data Pipeline Project
 
 ## Overview
-This project implements a data pipeline using Databricks and Google Colab, with Google Drive as the data source. The pipeline reads a CSV file, processes the data using PySpark, and writes the processed data to both Parquet and CSV formats as outputs. Additionally, a CI/CD pipeline is set up using GitHub Actions to ensure code quality through linting and testing.
+This project implements a data pipeline using Databricks. The pipeline reads a CSV file, processes the data using PySpark, and writes the processed data to both Parquet and CSV formats as outputs. Additionally, a CI/CD pipeline is set up using GitHub Actions to ensure code quality through linting and testing.
 
 ## Project Structure
 - `notebooks/`: Contains the Databricks notebook used for data processing.
